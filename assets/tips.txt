@@ -1,0 +1,51 @@
+Security Knowledgebase
+ 
+Port Scanning
+ 
+Port Scanning is a method for determining which ports on a network are open. 
+Ports on a computer are the place where information is sent and received, and through 
+scanning these ports, crucial information - such as which ports are open and 
+listening (receiving information), as well as the presence of security 
+devices(firewalls) - is revealed.
+ 
+SecureComp allows you to detect whether your system is being port scanned, as 
+well as the type of port scanning, where the scanning is coming 
+from (Source IP) as well as how many times the ports were scanned. 
+While it is impossible to prevent the act of port scanning; being aware of 
+it happening can warn the user of a possible network threat. Disconnecting 
+from the network can prevent a port scan, and another possible solution is 
+to use a small linux device (e.g. a raspberry pi) between your PC and the 
+internet. But a recommended method is to simply block all unnecessary ports
+on your system. More information can be found here: 
+https://www.ibm.com/support/pages/using-iptables-block-specific-ports
+
+Denial-of-Service 
+
+A Denial-of-Service (DoS) attack is an attack meant to shut down a machine or 
+network, making it inaccessible to its intended users. DoS attacks accomplish this 
+by flooding the target with traffic, or sending it information that triggers a crash.
+
+SecureComp allows you to detect whether your system is under a DoS/DDoS attack, and will
+alert you to it. While it is difficult to prevent a DoS attack, a possible solution to the 
+problem is 'throttling', where the user can limit the network traffic coming in and thus 
+be in no risk of being overwhelmed with network traffic. More information on this can be 
+found here: http://man7.org/linux/man-pages/man8/tc.8.html
+
+
+Unverified Connections
+
+An unverified connection is one where the user is not the one to initiate a connection. 
+This means that the user is being sent information from a source they have not communicated
+with beforehand, and while this can be harmless (ex. Google using a different server to send
+information to your browser compared to the original server the user sent a request to), sometimes
+it could be that a malicious actor is in your network
+
+It is always a good idea to cross-reference the sources of unverified connections
+
+
+Updating packages
+
+Many of the more harmful malware attacks we see take advantage of software vulnerabilities in common 
+applications, like operating systems and browsers. Updates are one of the most essential steps to take
+in order to protecting your information. Software can fix bugs, prevent compatibility issues and most importantly
+prevent security breaches. 

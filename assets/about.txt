@@ -1,0 +1,32 @@
+SecureComp is an application aimed at aiding Network Security and Application Security
+It is intuitive, easy-to-use, and is meant to enhance the security of a user
+
+
+HOW TO USE
+
+The first feature is the Network Monitoring Mode. Turning it on begins the live capture
+of network traffic coming into and out of the system. Any popups that come on the anaysis 
+screen can be further investigated using the 'Security Knowledgebase' button
+
+One can stop the network monitoring mode, which will then print the analysis results and save it
+in a file that can be accessed later with 'View Previous Logs'
+
+Another feature that a user is encouraged to use is the Update All Applications feature. Pressing 
+it will prompt the user for their system password, upon entering it will start to update all the 
+packages on the system. In the rare case that the feature to upgrade and update your system's packages doesn't 
+work, then it is recommended to use these commands in order on the system terminal, in order 
+to fix your issues and update your packages:
+'sudo apt-get clean'
+'sudo rm -rf /var/lib/apt/lists/*'
+'sudo apt-get clean'
+'sudo apt-get update'
+'sudo apt-get upgrade'
+
+There are a few Quality-of-Life features available for use. In the File/Config section, you can 
+configure the packets/second threshold for the DoS Checker to decide the threshold over which 
+a stream of internet traffic would be classified as a DoS attack. You can also modify the port
+scan threshold which decides how many ports would be scanned by a source over which the system
+flags it as a port scan attempt (in the case of a user knowing that a certain stream of packets
+would be coming over several ports and wishes to prevent a flag being raised). Another available 
+feature is 'Dark Mode', where the application switches to a darker theme, for the users that favour 
+that aesthetic. 
